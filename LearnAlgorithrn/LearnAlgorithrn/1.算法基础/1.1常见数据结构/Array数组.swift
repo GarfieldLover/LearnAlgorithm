@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Arrays: UIViewController {
+class Array数组: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,6 +102,13 @@ class Arrays: UIViewController {
         someStrs.forEach { value in
             print(value)
         }
+        
+        ///While 循环
+        ///while 循环从计算一个条件开始。如果条件为 true，会重复运行一段语句，直到条件变为 false。
+//        while condition {
+//            statements
+//        }
+        
     }
 }
 ///Array有以下几个高阶函数：filter map reduce flatMap compactMap。其中前三个和JavaScript语言是一样的
