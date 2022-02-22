@@ -13,17 +13,22 @@
 		918B311727C3434700AD46F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918B311527C3434700AD46F1 /* Main.storyboard */; };
 		918B311927C3434A00AD46F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918B311827C3434A00AD46F1 /* Assets.xcassets */; };
 		918B311C27C3434A00AD46F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918B311A27C3434A00AD46F1 /* LaunchScreen.storyboard */; };
-		918B312C27C3440400AD46F1 /* Array数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B312927C3440400AD46F1 /* Array数组.swift */; };
-		918B312D27C3440400AD46F1 /* Dictionary字典.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B312A27C3440400AD46F1 /* Dictionary字典.swift */; };
-		918B312E27C3440400AD46F1 /* Set集合.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B312B27C3440400AD46F1 /* Set集合.swift */; };
-		918B315827C3680A00AD46F1 /* Stack栈.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B315727C3680A00AD46F1 /* Stack栈.swift */; };
-		918B315B27C36EED00AD46F1 /* Queue队列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B315A27C36EED00AD46F1 /* Queue队列.swift */; };
-		918B315E27C38B7800AD46F1 /* List链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B315D27C38B7800AD46F1 /* List链表.swift */; };
-		918B316727C39ACF00AD46F1 /* HashTable哈希表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B316627C39ACF00AD46F1 /* HashTable哈希表.swift */; };
-		918B316A27C39C4900AD46F1 /* Tree树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B316927C39C4900AD46F1 /* Tree树.swift */; };
+		918B312C27C3440400AD46F1 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B312927C3440400AD46F1 /* Arrays.swift */; };
+		918B312D27C3440400AD46F1 /* Dictionarys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B312A27C3440400AD46F1 /* Dictionarys.swift */; };
+		918B312E27C3440400AD46F1 /* Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B312B27C3440400AD46F1 /* Sets.swift */; };
+		918B315827C3680A00AD46F1 /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B315727C3680A00AD46F1 /* Stacks.swift */; };
+		918B315B27C36EED00AD46F1 /* Queues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B315A27C36EED00AD46F1 /* Queues.swift */; };
+		918B316727C39ACF00AD46F1 /* HashTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B316627C39ACF00AD46F1 /* HashTables.swift */; };
+		918B316A27C39C4900AD46F1 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B316927C39C4900AD46F1 /* Tree.swift */; };
 		918B316E27C3A53300AD46F1 /* Sort排序算法.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B316D27C3A53300AD46F1 /* Sort排序算法.swift */; };
 		918B317127C3A85200AD46F1 /* Heap堆.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B317027C3A85200AD46F1 /* Heap堆.swift */; };
 		918B317427C3A89000AD46F1 /* Graph图.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B317327C3A89000AD46F1 /* Graph图.swift */; };
+		918B320327C4E74D00AD46F1 /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B320227C4E74D00AD46F1 /* Single.swift */; };
+		918B320827C4EA9E00AD46F1 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B320727C4EA9E00AD46F1 /* Double.swift */; };
+		918B320B27C4EB0600AD46F1 /* Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B320A27C4EB0600AD46F1 /* Circular.swift */; };
+		918B321227C4EE5900AD46F1 /* BinaryTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B321127C4EE5900AD46F1 /* BinaryTrees.swift */; };
+		918B321627C4F1B900AD46F1 /* BinarySearchTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B321527C4F1B900AD46F1 /* BinarySearchTrees.swift */; };
+		918B321B27C4F5E500AD46F1 /* AVLTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B321A27C4F5E500AD46F1 /* AVLTrees.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,17 +40,22 @@
 		918B311827C3434A00AD46F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		918B311B27C3434A00AD46F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		918B311D27C3434A00AD46F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		918B312927C3440400AD46F1 /* Array数组.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array数组.swift"; sourceTree = "<group>"; };
-		918B312A27C3440400AD46F1 /* Dictionary字典.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary字典.swift"; sourceTree = "<group>"; };
-		918B312B27C3440400AD46F1 /* Set集合.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set集合.swift"; sourceTree = "<group>"; };
-		918B315727C3680A00AD46F1 /* Stack栈.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stack栈.swift"; sourceTree = "<group>"; };
-		918B315A27C36EED00AD46F1 /* Queue队列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Queue队列.swift"; sourceTree = "<group>"; };
-		918B315D27C38B7800AD46F1 /* List链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List链表.swift"; sourceTree = "<group>"; };
-		918B316627C39ACF00AD46F1 /* HashTable哈希表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HashTable哈希表.swift"; sourceTree = "<group>"; };
-		918B316927C39C4900AD46F1 /* Tree树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tree树.swift"; sourceTree = "<group>"; };
+		918B312927C3440400AD46F1 /* Arrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
+		918B312A27C3440400AD46F1 /* Dictionarys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionarys.swift; sourceTree = "<group>"; };
+		918B312B27C3440400AD46F1 /* Sets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sets.swift; sourceTree = "<group>"; };
+		918B315727C3680A00AD46F1 /* Stacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stacks.swift; sourceTree = "<group>"; };
+		918B315A27C36EED00AD46F1 /* Queues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queues.swift; sourceTree = "<group>"; };
+		918B316627C39ACF00AD46F1 /* HashTables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTables.swift; sourceTree = "<group>"; };
+		918B316927C39C4900AD46F1 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		918B316D27C3A53300AD46F1 /* Sort排序算法.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sort排序算法.swift"; sourceTree = "<group>"; };
 		918B317027C3A85200AD46F1 /* Heap堆.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Heap堆.swift"; sourceTree = "<group>"; };
 		918B317327C3A89000AD46F1 /* Graph图.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Graph图.swift"; sourceTree = "<group>"; };
+		918B320227C4E74D00AD46F1 /* Single.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Single.swift; sourceTree = "<group>"; };
+		918B320727C4EA9E00AD46F1 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		918B320A27C4EB0600AD46F1 /* Circular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circular.swift; sourceTree = "<group>"; };
+		918B321127C4EE5900AD46F1 /* BinaryTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTrees.swift; sourceTree = "<group>"; };
+		918B321527C4F1B900AD46F1 /* BinarySearchTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTrees.swift; sourceTree = "<group>"; };
+		918B321A27C4F5E500AD46F1 /* AVLTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTrees.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,16 +112,16 @@
 		918B312827C3440400AD46F1 /* 1.1常见数据结构 */ = {
 			isa = PBXGroup;
 			children = (
-				918B312927C3440400AD46F1 /* Array数组.swift */,
-				918B312A27C3440400AD46F1 /* Dictionary字典.swift */,
-				918B312B27C3440400AD46F1 /* Set集合.swift */,
-				918B315727C3680A00AD46F1 /* Stack栈.swift */,
-				918B315A27C36EED00AD46F1 /* Queue队列.swift */,
-				918B315D27C38B7800AD46F1 /* List链表.swift */,
-				918B316627C39ACF00AD46F1 /* HashTable哈希表.swift */,
-				918B316927C39C4900AD46F1 /* Tree树.swift */,
-				918B317027C3A85200AD46F1 /* Heap堆.swift */,
-				918B317327C3A89000AD46F1 /* Graph图.swift */,
+				918B321027C4EB5500AD46F1 /* 图 */,
+				918B320F27C4EB4C00AD46F1 /* 堆 */,
+				918B320E27C4EB3F00AD46F1 /* 树 */,
+				918B320127C4E4F000AD46F1 /* 链表 */,
+				918B31FE27C4E4A100AD46F1 /* 队列 */,
+				918B31FC27C4E47E00AD46F1 /* 栈 */,
+				918B31F927C4E44300AD46F1 /* 散列表哈希表 */,
+				918B31F727C4E42100AD46F1 /* 集合 */,
+				918B31F527C4E3F000AD46F1 /* 字典 */,
+				918B31F327C4E37B00AD46F1 /* 数组 */,
 			);
 			path = "1.1常见数据结构";
 			sourceTree = "<group>";
@@ -122,6 +132,91 @@
 				918B316D27C3A53300AD46F1 /* Sort排序算法.swift */,
 			);
 			path = "1.2常见算法";
+			sourceTree = "<group>";
+		};
+		918B31F327C4E37B00AD46F1 /* 数组 */ = {
+			isa = PBXGroup;
+			children = (
+				918B312927C3440400AD46F1 /* Arrays.swift */,
+			);
+			path = "数组";
+			sourceTree = "<group>";
+		};
+		918B31F527C4E3F000AD46F1 /* 字典 */ = {
+			isa = PBXGroup;
+			children = (
+				918B312A27C3440400AD46F1 /* Dictionarys.swift */,
+			);
+			path = "字典";
+			sourceTree = "<group>";
+		};
+		918B31F727C4E42100AD46F1 /* 集合 */ = {
+			isa = PBXGroup;
+			children = (
+				918B312B27C3440400AD46F1 /* Sets.swift */,
+			);
+			path = "集合";
+			sourceTree = "<group>";
+		};
+		918B31F927C4E44300AD46F1 /* 散列表哈希表 */ = {
+			isa = PBXGroup;
+			children = (
+				918B316627C39ACF00AD46F1 /* HashTables.swift */,
+			);
+			path = "散列表哈希表";
+			sourceTree = "<group>";
+		};
+		918B31FC27C4E47E00AD46F1 /* 栈 */ = {
+			isa = PBXGroup;
+			children = (
+				918B315727C3680A00AD46F1 /* Stacks.swift */,
+			);
+			path = "栈";
+			sourceTree = "<group>";
+		};
+		918B31FE27C4E4A100AD46F1 /* 队列 */ = {
+			isa = PBXGroup;
+			children = (
+				918B315A27C36EED00AD46F1 /* Queues.swift */,
+			);
+			path = "队列";
+			sourceTree = "<group>";
+		};
+		918B320127C4E4F000AD46F1 /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				918B320227C4E74D00AD46F1 /* Single.swift */,
+				918B320727C4EA9E00AD46F1 /* Double.swift */,
+				918B320A27C4EB0600AD46F1 /* Circular.swift */,
+			);
+			path = "链表";
+			sourceTree = "<group>";
+		};
+		918B320E27C4EB3F00AD46F1 /* 树 */ = {
+			isa = PBXGroup;
+			children = (
+				918B316927C39C4900AD46F1 /* Tree.swift */,
+				918B321127C4EE5900AD46F1 /* BinaryTrees.swift */,
+				918B321527C4F1B900AD46F1 /* BinarySearchTrees.swift */,
+				918B321A27C4F5E500AD46F1 /* AVLTrees.swift */,
+			);
+			path = "树";
+			sourceTree = "<group>";
+		};
+		918B320F27C4EB4C00AD46F1 /* 堆 */ = {
+			isa = PBXGroup;
+			children = (
+				918B317027C3A85200AD46F1 /* Heap堆.swift */,
+			);
+			path = "堆";
+			sourceTree = "<group>";
+		};
+		918B321027C4EB5500AD46F1 /* 图 */ = {
+			isa = PBXGroup;
+			children = (
+				918B317327C3A89000AD46F1 /* Graph图.swift */,
+			);
+			path = "图";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,20 +289,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918B321227C4EE5900AD46F1 /* BinaryTrees.swift in Sources */,
 				918B311427C3434700AD46F1 /* ViewController.swift in Sources */,
-				918B316A27C39C4900AD46F1 /* Tree树.swift in Sources */,
+				918B316A27C39C4900AD46F1 /* Tree.swift in Sources */,
+				918B320B27C4EB0600AD46F1 /* Circular.swift in Sources */,
+				918B320827C4EA9E00AD46F1 /* Double.swift in Sources */,
 				918B316E27C3A53300AD46F1 /* Sort排序算法.swift in Sources */,
-				918B312D27C3440400AD46F1 /* Dictionary字典.swift in Sources */,
-				918B312C27C3440400AD46F1 /* Array数组.swift in Sources */,
+				918B312D27C3440400AD46F1 /* Dictionarys.swift in Sources */,
+				918B312C27C3440400AD46F1 /* Arrays.swift in Sources */,
 				918B317127C3A85200AD46F1 /* Heap堆.swift in Sources */,
 				918B311027C3434700AD46F1 /* AppDelegate.swift in Sources */,
-				918B315827C3680A00AD46F1 /* Stack栈.swift in Sources */,
-				918B312E27C3440400AD46F1 /* Set集合.swift in Sources */,
+				918B315827C3680A00AD46F1 /* Stacks.swift in Sources */,
+				918B312E27C3440400AD46F1 /* Sets.swift in Sources */,
 				918B311227C3434700AD46F1 /* SceneDelegate.swift in Sources */,
-				918B316727C39ACF00AD46F1 /* HashTable哈希表.swift in Sources */,
-				918B315B27C36EED00AD46F1 /* Queue队列.swift in Sources */,
-				918B315E27C38B7800AD46F1 /* List链表.swift in Sources */,
+				918B316727C39ACF00AD46F1 /* HashTables.swift in Sources */,
+				918B321627C4F1B900AD46F1 /* BinarySearchTrees.swift in Sources */,
+				918B315B27C36EED00AD46F1 /* Queues.swift in Sources */,
+				918B320327C4E74D00AD46F1 /* Single.swift in Sources */,
 				918B317427C3A89000AD46F1 /* Graph图.swift in Sources */,
+				918B321B27C4F5E500AD46F1 /* AVLTrees.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

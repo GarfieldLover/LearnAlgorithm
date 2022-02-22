@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Dictionary字典: UIViewController {
+class Dictionarys: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

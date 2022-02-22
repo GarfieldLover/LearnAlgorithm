@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Stack栈: UIViewController {
+class Stacks: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

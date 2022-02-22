@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Queue队列: UIViewController {
+class Queues: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

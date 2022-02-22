@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HashTable哈希表: UIViewController {
+class HashTables: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,7 +8,7 @@
 import UIKit
 
 
-class Set集合: UIViewController {
+class Sets: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
