@@ -16,18 +16,18 @@ class Tree: UIViewController {
 }
 
 ///一个节点可以包含多个子节点，因此子节点是一个数组类型
-public class TreeNode<T> {
-    public weak var parent: TreeNode?
-    public var value: T
-    public var children: [TreeNode] = []
+class TreeNode<T> {
+    weak var parent: TreeNode?
+    var value: T
+    var children: [TreeNode] = []
     
-    public init(_ value: T) {
+    init(_ value: T) {
         self.value = value
     }
 }
 extension TreeNode {
     
-    public func add(_ child: TreeNode) {
+    func add(_ child: TreeNode) {
         children.append(child)
     }
     

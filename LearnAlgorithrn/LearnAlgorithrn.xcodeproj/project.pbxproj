@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91212EE927C5DDFA00501343 /* SimpleGraphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91212EE827C5DDFA00501343 /* SimpleGraphs.swift */; };
 		918B311027C3434700AD46F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B310F27C3434700AD46F1 /* AppDelegate.swift */; };
 		918B311227C3434700AD46F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B311127C3434700AD46F1 /* SceneDelegate.swift */; };
 		918B311427C3434700AD46F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B311327C3434700AD46F1 /* ViewController.swift */; };
@@ -21,8 +22,8 @@
 		918B316727C39ACF00AD46F1 /* HashTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B316627C39ACF00AD46F1 /* HashTables.swift */; };
 		918B316A27C39C4900AD46F1 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B316927C39C4900AD46F1 /* Tree.swift */; };
 		918B316E27C3A53300AD46F1 /* Sort排序算法.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B316D27C3A53300AD46F1 /* Sort排序算法.swift */; };
-		918B317127C3A85200AD46F1 /* Heap堆.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B317027C3A85200AD46F1 /* Heap堆.swift */; };
-		918B317427C3A89000AD46F1 /* Graph图.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B317327C3A89000AD46F1 /* Graph图.swift */; };
+		918B317127C3A85200AD46F1 /* Heaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B317027C3A85200AD46F1 /* Heaps.swift */; };
+		918B317427C3A89000AD46F1 /* Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B317327C3A89000AD46F1 /* Graphs.swift */; };
 		918B320327C4E74D00AD46F1 /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B320227C4E74D00AD46F1 /* Single.swift */; };
 		918B320827C4EA9E00AD46F1 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B320727C4EA9E00AD46F1 /* Double.swift */; };
 		918B320B27C4EB0600AD46F1 /* Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B320A27C4EB0600AD46F1 /* Circular.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91212EE827C5DDFA00501343 /* SimpleGraphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGraphs.swift; sourceTree = "<group>"; };
 		918B310C27C3434700AD46F1 /* LearnAlgorithrn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnAlgorithrn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		918B310F27C3434700AD46F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		918B311127C3434700AD46F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +50,8 @@
 		918B316627C39ACF00AD46F1 /* HashTables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTables.swift; sourceTree = "<group>"; };
 		918B316927C39C4900AD46F1 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		918B316D27C3A53300AD46F1 /* Sort排序算法.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sort排序算法.swift"; sourceTree = "<group>"; };
-		918B317027C3A85200AD46F1 /* Heap堆.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Heap堆.swift"; sourceTree = "<group>"; };
-		918B317327C3A89000AD46F1 /* Graph图.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Graph图.swift"; sourceTree = "<group>"; };
+		918B317027C3A85200AD46F1 /* Heaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heaps.swift; sourceTree = "<group>"; };
+		918B317327C3A89000AD46F1 /* Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphs.swift; sourceTree = "<group>"; };
 		918B320227C4E74D00AD46F1 /* Single.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Single.swift; sourceTree = "<group>"; };
 		918B320727C4EA9E00AD46F1 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		918B320A27C4EB0600AD46F1 /* Circular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circular.swift; sourceTree = "<group>"; };
@@ -206,7 +208,7 @@
 		918B320F27C4EB4C00AD46F1 /* 堆 */ = {
 			isa = PBXGroup;
 			children = (
-				918B317027C3A85200AD46F1 /* Heap堆.swift */,
+				918B317027C3A85200AD46F1 /* Heaps.swift */,
 			);
 			path = "堆";
 			sourceTree = "<group>";
@@ -214,7 +216,8 @@
 		918B321027C4EB5500AD46F1 /* 图 */ = {
 			isa = PBXGroup;
 			children = (
-				918B317327C3A89000AD46F1 /* Graph图.swift */,
+				918B317327C3A89000AD46F1 /* Graphs.swift */,
+				91212EE827C5DDFA00501343 /* SimpleGraphs.swift */,
 			);
 			path = "图";
 			sourceTree = "<group>";
@@ -297,16 +300,17 @@
 				918B316E27C3A53300AD46F1 /* Sort排序算法.swift in Sources */,
 				918B312D27C3440400AD46F1 /* Dictionarys.swift in Sources */,
 				918B312C27C3440400AD46F1 /* Arrays.swift in Sources */,
-				918B317127C3A85200AD46F1 /* Heap堆.swift in Sources */,
+				918B317127C3A85200AD46F1 /* Heaps.swift in Sources */,
 				918B311027C3434700AD46F1 /* AppDelegate.swift in Sources */,
 				918B315827C3680A00AD46F1 /* Stacks.swift in Sources */,
 				918B312E27C3440400AD46F1 /* Sets.swift in Sources */,
+				91212EE927C5DDFA00501343 /* SimpleGraphs.swift in Sources */,
 				918B311227C3434700AD46F1 /* SceneDelegate.swift in Sources */,
 				918B316727C39ACF00AD46F1 /* HashTables.swift in Sources */,
 				918B321627C4F1B900AD46F1 /* BinarySearchTrees.swift in Sources */,
 				918B315B27C36EED00AD46F1 /* Queues.swift in Sources */,
 				918B320327C4E74D00AD46F1 /* Single.swift in Sources */,
-				918B317427C3A89000AD46F1 /* Graph图.swift in Sources */,
+				918B317427C3A89000AD46F1 /* Graphs.swift in Sources */,
 				918B321B27C4F5E500AD46F1 /* AVLTrees.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

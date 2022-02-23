@@ -18,7 +18,7 @@ class Circular: UIViewController {
 }
 
 /// 循环链表
-public class CircularLinkedList<T: Equatable> {
+class CircularLinkedList<T: Equatable> {
     /// 链表的头结点
     var head: ListNode<T>?
     /// 链表的尾结点
@@ -50,7 +50,7 @@ public class CircularLinkedList<T: Equatable> {
         return curNode
     }
     
-    public func append(atHead new: T) {
+    func append(atHead new: T) {
             if head == nil {
                 head = ListNode(value: new)
                 tail = head
@@ -64,7 +64,7 @@ public class CircularLinkedList<T: Equatable> {
             count += 1
         }
         
-        public func append(atTail new: T) {
+        func append(atTail new: T) {
             if tail != nil {
                 let next = tail?.next
                 if count == 1 {
@@ -84,7 +84,7 @@ public class CircularLinkedList<T: Equatable> {
         }
         
         
-        public func insert(_ new: T, at i: Int) {
+        func insert(_ new: T, at i: Int) {
             guard i <= count else { return }
             
             if i == 0 {
@@ -102,7 +102,7 @@ public class CircularLinkedList<T: Equatable> {
         }
 
         @discardableResult
-        public func remove(at index: Int) -> T? {
+        func remove(at index: Int) -> T? {
             guard head != nil else { return nil }
             guard index < count else { return nil }
             
@@ -121,7 +121,7 @@ public class CircularLinkedList<T: Equatable> {
         }
         
         @discardableResult
-        public func removeFirst() -> T? {
+        func removeFirst() -> T? {
             let val = head?.value
             if count == 1 {
                 head = nil
@@ -135,7 +135,7 @@ public class CircularLinkedList<T: Equatable> {
         }
         
         @discardableResult
-        public func removeLast() -> T? {
+        func removeLast() -> T? {
             guard head != nil else { return nil }
             let val: T?
             
@@ -152,26 +152,26 @@ public class CircularLinkedList<T: Equatable> {
             return val
         }
 
-        public func removeAll() {
+        func removeAll() {
             count = 0
             head = nil
             tail = nil
         }
         
         
-        public func update(at index: Int, _ new: T) {
+        func update(at index: Int, _ new: T) {
             guard let curNode = _node(index) else { fatalError("Index out of range") }
             curNode.value = new
         }
         
         
         @discardableResult
-        public func index(of index: Int) -> T? {
+        func index(of index: Int) -> T? {
             return _node(index)?.value
         }
         
 
-        public func contains(_ element: T) -> Bool {
+        func contains(_ element: T) -> Bool {
             guard head != nil else { return false }
             
             var curNode = head
@@ -184,7 +184,7 @@ public class CircularLinkedList<T: Equatable> {
             return false
         }
         
-        public func getAllElements() -> [T] {
+        func getAllElements() -> [T] {
             guard count > 0 else { return [] }
             var nodes = [T]()
             var curNode = head

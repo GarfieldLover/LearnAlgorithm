@@ -18,14 +18,14 @@ class BinaryTrees: UIViewController {
 }
 
 ///二叉树
-public class BinaryNode<T> {
-    public var value: T
-    public var leftChild: BinaryNode?
-    public var rightChild: BinaryNode?
+class BinaryNode<T> {
+    var value: T
+    var leftChild: BinaryNode?
+    var rightChild: BinaryNode?
     
-    public var parent: BinaryNode?
+    var parent: BinaryNode?
     
-    public init(value: T) {
+    init(value: T) {
         self.value = value
         self.leftChild = nil
         self.rightChild = nil
@@ -33,45 +33,45 @@ public class BinaryNode<T> {
     }
     
     /// 是否是根节点
-    public var isRoot: Bool {
+    var isRoot: Bool {
         return parent == nil
     }
     /// 是否是叶节点
-    public var isLeaf: Bool {
+    var isLeaf: Bool {
         return leftChild == nil && rightChild == nil
     }
     /// 是否是左子节点
-    public var isLeftChild: Bool {
+    var isLeftChild: Bool {
         return parent?.leftChild === self
     }
     /// 是否是右子节点
-    public var isRightChild: Bool {
+    var isRightChild: Bool {
         return parent?.rightChild === self
     }
     /// 是否有左子节点
-    public var hasLeftChild: Bool {
+    var hasLeftChild: Bool {
         return leftChild != nil
     }
     /// 是否有右子节点
-    public var hasRightChild: Bool {
+    var hasRightChild: Bool {
         return rightChild != nil
     }
     /// 是否有子节点
-    public var hasAnyChild: Bool {
+    var hasAnyChild: Bool {
         return hasLeftChild || hasRightChild
     }
     /// 是否左右两个子节点都有
-    public var hasBothChildren: Bool {
+    var hasBothChildren: Bool {
         return hasLeftChild && hasRightChild
     }
     /// 当前节点包括子树中的所有节点总数
-    public var count: Int {
+    var count: Int {
         return (leftChild?.count ?? 0) + 1 + (rightChild?.count ?? 0)
     }
 
 }
 
-public extension BinaryNode {
+extension BinaryNode {
     ///中序遍历
     func traverseInOrder(visit: (T) -> Void) {
         leftChild?.traverseInOrder(visit: visit)

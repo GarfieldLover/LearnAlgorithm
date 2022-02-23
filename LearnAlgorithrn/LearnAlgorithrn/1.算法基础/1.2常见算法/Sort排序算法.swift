@@ -19,6 +19,35 @@ class Sort排序算法: UIViewController {
 struct Sort { }
 
 extension Sort {
+    /// 插入排序 - 时间复杂度 n²，稳定排序
+    static func insertionSort(_ array: [Int]) -> [Int] {
+        var a = array             // 1
+        for x in 1..<a.count {         // 2
+            var y = x
+            while y > 0 && a[y] < a[y - 1] { // 3
+                a.swapAt(y - 1, y)///Swift交换
+                y -= 1
+            }
+        }
+        return a
+    }
+    
+    static func insertionSort1(_ array: [Int]) -> [Int] {
+      var a = array
+      for x in 1..<a.count {
+        var y = x
+        let temp = a[y]
+        while y > 0 && temp < a[y - 1] {
+          a[y] = a[y - 1]                // 1
+          y -= 1
+        }
+        a[y] = temp                      // 2
+      }
+      return a
+    }
+}
+
+extension Sort {
     /// 冒泡排序 - 时间复杂度 n²，稳定排序
     /// - Parameter target: 待排序数组
     static func bubbleSort<E: Comparable>(target: [E]) -> [E] {
@@ -112,31 +141,31 @@ extension Sort {
     }
 }
 
-extension Sort {
-    /// 桶排序，时间复杂度 n，稳定排序
-    /// - Parameter target:待排序数组
-    /// 局限：时间复杂度可能退化到 nlogn
-    static func bucketSort(target: [Double]) -> [Double] {
-        let max = target.max() ?? 0.0
-        let min = target.min() ?? 0.0
-        let d = max - min
-        
-        let bucketNum = target.count
-        
-        var bucketList = Array(repeating: [Double](), count: target.count)
-        for idx in 0..<target.count {
-            let num = Int((target[idx] - min) * Double(bucketNum - 1) / d)
-            bucketList[num].append(target[idx])
-        }
-        
-        for idx in 0..<target.count {
-            bucketList[idx] = bucketList[idx].sorted()
-        }
-        
-        let sorted = bucketList.reduce([]) { (result, curr) -> [Double] in
-            return result + curr
-        }
-        
-        return sorted
-    }
-}
+//extension Sort {
+//    /// 桶排序，时间复杂度 n，稳定排序
+//    /// - Parameter target:待排序数组
+//    /// 局限：时间复杂度可能退化到 nlogn
+//    static func bucketSort(target: [Double]) -> [Double] {
+//        let max = target.max() ?? 0.0
+//        let min = target.min() ?? 0.0
+//        let d = max - min
+//        
+//        let bucketNum = target.count
+//        
+//        var bucketList = Array(repeating: [Double](), count: target.count)
+//        for idx in 0..<target.count {
+//            let num = Int((target[idx] - min) * Double(bucketNum - 1) / d)
+//            bucketList[num].append(target[idx])
+//        }
+//        
+//        for idx in 0..<target.count {
+//            bucketList[idx] = bucketList[idx].sorted()
+//        }
+//        
+//        let sorted = bucketList.reduce([]) { (result, curr) -> [Double] in
+//            return result + curr
+//        }
+//        
+//        return sorted
+//    }
+//}

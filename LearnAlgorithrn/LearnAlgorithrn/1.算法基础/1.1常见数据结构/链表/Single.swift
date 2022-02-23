@@ -21,7 +21,7 @@ class ListNode<T: Equatable> {
     var value: T
     var next: ListNode?
     
-    public init(value: T) {
+    init(value: T) {
         self.value = value
     }
     
@@ -69,7 +69,7 @@ class SingleList<T: Equatable> {
     }
     
     // 头部追加
-    public func append(atHead new: T) {
+    func append(atHead new: T) {
         if isEmpty {
             head = ListNode(value: new)
         } else {
@@ -81,14 +81,14 @@ class SingleList<T: Equatable> {
     }
     
     //尾部添加
-    public func append(atTail new: T) {
+    func append(atTail new: T) {
         if let tail = _node(count - 1) {
             tail.next = ListNode(value: new)
             count += 1
         }
     }
     //插入节点
-    public func insert(_ new: T, at i: Int) {
+    func insert(_ new: T, at i: Int) {
         guard i <= count else { return }
         
         if i == 0 {
@@ -107,7 +107,7 @@ class SingleList<T: Equatable> {
     
     //删除指定索引的节点
     @discardableResult
-    public func remove(at index: Int) -> T? {
+    func remove(at index: Int) -> T? {
         guard head != nil else { return nil }
         guard index < count else { return nil }
         
@@ -126,7 +126,7 @@ class SingleList<T: Equatable> {
     }
     // 删除第一个节点
     @discardableResult
-    public func removeFirst() -> T? {
+    func removeFirst() -> T? {
         let val = head?.value
         if count == 1 {
             head = nil
@@ -139,7 +139,7 @@ class SingleList<T: Equatable> {
     
     // 删除最后一个节点
     @discardableResult
-    public func removeLast() -> T? {
+    func removeLast() -> T? {
         guard head != nil else { return nil }
         
         if count == 1 {
@@ -158,7 +158,7 @@ class SingleList<T: Equatable> {
         }
     }
     // 删除所有的节点
-    public func removeAll() {
+    func removeAll() {
         count = 0
         head = nil
     }
@@ -167,7 +167,7 @@ class SingleList<T: Equatable> {
      /// - Parameters:
      ///   - index: 更新节点的位置
      ///   - newElement: 新节点
-    public func update(at index: Int, _ new: T) {
+    func update(at index: Int, _ new: T) {
         guard let curNode = _node(index) else { fatalError("Index out of range") }
         curNode.value = new
     }
@@ -176,14 +176,14 @@ class SingleList<T: Equatable> {
     /// - Parameter index: 获取位置
     /// - Returns: 当前 index 的节点值
     @discardableResult
-    public func index(of index: Int) -> T? {
+    func index(of index: Int) -> T? {
         return _node(index)?.value
     }
     
     /// 是否包含 element
     /// - Parameter element: 需要查找的 element
     /// - Returns: 如果链表中包含该元素，返回 true，反之则返回 false
-    public func contains(_ element: T) -> Bool {
+    func contains(_ element: T) -> Bool {
         guard head != nil else { return false }
         
         var curNode = head
@@ -198,7 +198,7 @@ class SingleList<T: Equatable> {
     
     /// 获取链表所有元素 (Get all the elements of the linked list)
     /// - Returns: 返回包含链表所有元素的数组
-    public func getAllElements() -> [T] {
+    func getAllElements() -> [T] {
         var nodes = [T]()
         var curNode = head
         while curNode != nil {

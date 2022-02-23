@@ -17,20 +17,20 @@ class HashTables: UIViewController {
     
 }
 
-public struct HashTable<Key: Hashable, Value> {
+struct HashTable<Key: Hashable, Value> {
     private typealias Element = (key: Key, value: Value)
     private typealias Bucket = [Element]
     private var buckets: [Bucket]
     
-    private(set) public var count = 0
-    public var isEmpty: Bool { return count == 0 }
+    private(set) var count = 0
+    var isEmpty: Bool { return count == 0 }
     
-    public init(capacity: Int) {
+    init(capacity: Int) {
         assert(capacity > 0)
         buckets = Array<Bucket>(repeating: [], count: capacity)
     }
     
-    public subscript(key: Key) -> Value? {
+    subscript(key: Key) -> Value? {
         get {
             return value(forKey: key)
         }
@@ -44,7 +44,7 @@ public struct HashTable<Key: Hashable, Value> {
         }
     }
     
-    public func value(forKey key: Key) -> Value? {
+    func value(forKey key: Key) -> Value? {
         let index = self.index(forKey: key)
         for element in buckets[index] {
             if element.key == key {
@@ -55,7 +55,7 @@ public struct HashTable<Key: Hashable, Value> {
     }
     
     @discardableResult
-    public mutating func updateValue(_ value: Value, forKey key: Key) -> Value? {
+    mutating func updateValue(_ value: Value, forKey key: Key) -> Value? {
         let index = self.index(forKey: key)
         for (i, element) in buckets[index].enumerated() {
             if element.key == key {
@@ -70,7 +70,7 @@ public struct HashTable<Key: Hashable, Value> {
     }
     
     @discardableResult
-    public mutating func removeValue(forKey key: Key) -> Value? {
+    mutating func removeValue(forKey key: Key) -> Value? {
         let index = self.index(forKey: key)
         for (i, element) in buckets[index].enumerated() {
             if element.key == key {

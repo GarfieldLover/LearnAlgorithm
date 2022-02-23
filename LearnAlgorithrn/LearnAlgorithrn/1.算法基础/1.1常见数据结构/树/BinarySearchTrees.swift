@@ -19,53 +19,53 @@ class BinarySearchTrees: UIViewController {
 ///二叉搜索树
 ///每个左子节点小于其父节点，并且每个右子节点大于其父节点。 这是二叉搜索树的关键特性
 ///执行插入时，我们首先将新值与根节点进行比较。 如果新值较小，我们采取 左 分支; 如果更大，我们采取 右 分支。我们沿着这条路向下走，直到找到一个我们可以插入新值的空位。
-public class SearchTree<T: Comparable> {
-    private(set) public var value: T
-    private(set) public var parent: SearchTree?
-    private(set) public var left: SearchTree?
-    private(set) public var right: SearchTree?
+class SearchTree<T: Comparable> {
+    private(set) var value: T
+    private(set) var parent: SearchTree?
+    private(set) var left: SearchTree?
+    private(set) var right: SearchTree?
     
-    public init(value: T) {
+    init(value: T) {
         self.value = value
     }
     /// 是否是根节点
-    public var isRoot: Bool {
+    var isRoot: Bool {
         return parent == nil
     }
     /// 是否是叶节点
-    public var isLeaf: Bool {
+    var isLeaf: Bool {
         return left == nil && right == nil
     }
     /// 是否是左子节点
-    public var isLeftChild: Bool {
+    var isLeftChild: Bool {
         return parent?.left === self
     }
     /// 是否是右子节点
-    public var isRightChild: Bool {
+    var isRightChild: Bool {
         return parent?.right === self
     }
     /// 是否有左子节点
-    public var hasLeftChild: Bool {
+    var hasLeftChild: Bool {
         return left != nil
     }
     /// 是否有右子节点
-    public var hasRightChild: Bool {
+    var hasRightChild: Bool {
         return right != nil
     }
     /// 是否有子节点
-    public var hasAnyChild: Bool {
+    var hasAnyChild: Bool {
         return hasLeftChild || hasRightChild
     }
     /// 是否左右两个子节点都有
-    public var hasBothChildren: Bool {
+    var hasBothChildren: Bool {
         return hasLeftChild && hasRightChild
     }
     /// 当前节点包括子树中的所有节点总数
-    public var count: Int {
+    var count: Int {
         return (left?.count ?? 0) + 1 + (right?.count ?? 0)
     }
     ///插入节点
-    public func insert(value: T) {
+    func insert(value: T) {
       if value < self.value {
         if let left = left {
           left.insert(value: value)
@@ -83,7 +83,7 @@ public class SearchTree<T: Comparable> {
       }
     }
     ///搜索节点,递归
-    public func search(value: T) -> SearchTree? {
+    func search(value: T) -> SearchTree? {
       if value < self.value {
         return left?.search(value: value)
       } else if value > self.value {
@@ -93,7 +93,7 @@ public class SearchTree<T: Comparable> {
       }
     }
     ///搜索节点,循环
-    public func search(_ value: T) -> SearchTree? {
+    func search(_ value: T) -> SearchTree? {
       var node: SearchTree? = self
       while let n = node {
         if value < n.value {
@@ -107,7 +107,7 @@ public class SearchTree<T: Comparable> {
       return nil
     }
     ///转换成数组(中序)
-    public func map(formula: (T) -> T) -> [T] {
+    func map(formula: (T) -> T) -> [T] {
       var a = [T]()
       if let left = left { a += left.map(formula: formula) }
       a.append(formula(value))
@@ -115,7 +115,7 @@ public class SearchTree<T: Comparable> {
       return a
     }
     ///删除节点
-    @discardableResult public func remove() -> SearchTree? {
+    @discardableResult func remove() -> SearchTree? {
       let replacement: SearchTree?
 
       // Replacement for current node can be either biggest one on the left or
@@ -157,7 +157,7 @@ public class SearchTree<T: Comparable> {
     }
     
     ///返回节点最小值和最大值
-    public func minimum() -> SearchTree {
+    func minimum() -> SearchTree {
       var node = self
       while let next = node.left {
         node = next
@@ -165,7 +165,7 @@ public class SearchTree<T: Comparable> {
       return node
     }
 
-    public func maximum() -> SearchTree {
+    func maximum() -> SearchTree {
       var node = self
       while let next = node.right {
         node = next
@@ -173,7 +173,7 @@ public class SearchTree<T: Comparable> {
       return node
     }
     ///获取树高度
-    public func height() -> Int {
+    func height() -> Int {
       if isLeaf {
         return 0
       } else {
@@ -181,7 +181,7 @@ public class SearchTree<T: Comparable> {
       }
     }
     ///深度
-    public func depth() -> Int {
+    func depth() -> Int {
       var node = self
       var edges = 0
       while let parent = node.parent {
@@ -191,7 +191,7 @@ public class SearchTree<T: Comparable> {
       return edges
     }
     ///以排序顺序返回其值在当前值之前的节点
-    public func predecessor() -> SearchTree<T>? {
+    func predecessor() -> SearchTree<T>? {
       if let left = left {
         return left.maximum()
       } else {
@@ -204,7 +204,7 @@ public class SearchTree<T: Comparable> {
       }
     }
     ///以排序顺序返回其值在当前值之后的节点
-    public func successor() -> SearchTree<T>? {
+    func successor() -> SearchTree<T>? {
       if let right = right {
         return right.minimum()
       } else {
@@ -217,7 +217,7 @@ public class SearchTree<T: Comparable> {
       }
     }
     ///是否是有效的二叉搜索树
-    public func isBST(minValue: T, maxValue: T) -> Bool {
+    func isBST(minValue: T, maxValue: T) -> Bool {
       if value < minValue || value > maxValue { return false }
       let leftBST = left?.isBST(minValue: minValue, maxValue: value) ?? true
       let rightBST = right?.isBST(minValue: value, maxValue: maxValue) ?? true

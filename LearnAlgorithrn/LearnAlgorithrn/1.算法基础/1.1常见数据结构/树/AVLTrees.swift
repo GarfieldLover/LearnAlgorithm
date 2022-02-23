@@ -19,16 +19,16 @@ class AVLTrees: UIViewController {
 }
 
 
-public class AvlTree<T: Comparable>{
+class AvlTree<T: Comparable>{
     
-    public class AVLTreeNode {
-        public var value: T
-        public var parent: AVLTreeNode?
-        public var left: AVLTreeNode?
-        public var right: AVLTreeNode?
-        public var height: Int = 1
+    class AVLTreeNode {
+        var value: T
+        var parent: AVLTreeNode?
+        var left: AVLTreeNode?
+        var right: AVLTreeNode?
+        var height: Int = 1
 
-        public init(value: T) {
+        init(value: T) {
             self.value = value
         }
     }
@@ -37,7 +37,7 @@ public class AvlTree<T: Comparable>{
     private var root: AVLTreeNode?
     private var size: Int
     
-    public init() {
+    init() {
         root = nil
         size = 0
     }
@@ -50,11 +50,11 @@ public class AvlTree<T: Comparable>{
         return node.height
     }
     
-    public func getSize() -> Int {
+    func getSize() -> Int {
         return size
     }
     
-    public func isEmpty() -> Bool {
+    func isEmpty() -> Bool {
         return size == 0
     }
     
@@ -71,7 +71,7 @@ public class AvlTree<T: Comparable>{
     }
     
     //判断树是否为平衡二叉树
-    public func isBalanced() -> Bool {
+    func isBalanced() -> Bool {
         return isBalanced(node: root)
     }
     
@@ -122,7 +122,7 @@ public class AvlTree<T: Comparable>{
     }
     
     // 向二分搜索树中添加新的元素(key, value)
-    public func add(value: T) {
+    func add(value: T) {
         root = add(node: root, value: value)
     }
     
@@ -188,7 +188,7 @@ extension AvlTree {
 
     }
     //移出节点
-    public func remove(value: T) -> T? {
+    func remove(value: T) -> T? {
         guard let node = getNode(root: root, value: value) else {
             return nil
         }

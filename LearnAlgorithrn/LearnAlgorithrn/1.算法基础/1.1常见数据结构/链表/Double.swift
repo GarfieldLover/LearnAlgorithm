@@ -18,7 +18,7 @@ class Double: UIViewController {
 }
 
 /// 双链表的节点
-public class DoubleLinkNode<T: Equatable> {
+class DoubleLinkNode<T: Equatable> {
     var val: T
     var next: DoubleLinkNode?
     var prev: DoubleLinkNode?
@@ -35,9 +35,9 @@ public class DoubleLinkNode<T: Equatable> {
 }
 
 /// 双向链表  (Double linked list)
-public class DoubleLinkedList<T: Equatable> {
-    public var head: DoubleLinkNode<T>?
-    public var tail: DoubleLinkNode<T>?
+class DoubleLinkedList<T: Equatable> {
+    var head: DoubleLinkNode<T>?
+    var tail: DoubleLinkNode<T>?
     private(set) var count = 0
     
     /// 获取节点  (Get node)
@@ -73,7 +73,7 @@ public class DoubleLinkedList<T: Equatable> {
 
     /// 在链表头部添加节点 ( Add a node to the head of the linked list )
     /// - Parameter newElement: 添加的节点
-    public func append(atHead new: T) {
+    func append(atHead new: T) {
         if head == nil {
             head = DoubleLinkNode(prev: nil, val: new, next: nil)
             tail = head
@@ -87,7 +87,7 @@ public class DoubleLinkedList<T: Equatable> {
     
     /// 在链表尾部添加节点 ( Add node at the end of the list )
      /// - Parameter newElement: 添加的节点
-    public func append(atTail new: T) {
+    func append(atTail new: T) {
         if tail == nil {
             tail = DoubleLinkNode(prev: nil, val: new, next: nil)
             head = tail
@@ -108,7 +108,7 @@ public class DoubleLinkedList<T: Equatable> {
     /// - Parameters:
     ///   - newElement: 添加的节点
     ///   - i: 添加的位置
-    public func insert(_ new: T, at i: Int) {
+    func insert(_ new: T, at i: Int) {
         guard i < count else { return }
         
         if i == 0 {
@@ -130,7 +130,7 @@ public class DoubleLinkedList<T: Equatable> {
     /// - Parameter index: 移除的位置
     /// - Returns: 被移除的节点
     @discardableResult
-    public func remove(at index: Int) -> T? {
+    func remove(at index: Int) -> T? {
         guard head != nil else { return nil }
         
         if index == 0 {
@@ -151,7 +151,7 @@ public class DoubleLinkedList<T: Equatable> {
     
     /// 移除头部节点 ( Remove head node )
     /// - Returns: 被移除的节点
-    public func removeFirst() -> T? {
+    func removeFirst() -> T? {
         guard head != nil else {
             return nil
         }
@@ -166,7 +166,7 @@ public class DoubleLinkedList<T: Equatable> {
     
     /// 移除尾部节点  ( Remove tail node )
     /// - Returns: 被移除的节点
-    public func removeLast() -> T? {
+    func removeLast() -> T? {
         guard tail != nil else {
             return nil
         }
@@ -179,7 +179,7 @@ public class DoubleLinkedList<T: Equatable> {
         return old?.val
     }
     /// 移除所有节点
-    public func removeAll() {
+    func removeAll() {
         // 将所有元素置空 (Empty all elements)
         var curNode = head
         while curNode != nil {
@@ -198,7 +198,7 @@ public class DoubleLinkedList<T: Equatable> {
     /// - Parameters:
     ///   - index: 更新节点的位置
     ///   - newElement: 新节点
-    public func update(at index: Int, _ new: T) {
+    func update(at index: Int, _ new: T) {
         guard let curNode = _node(index) else { fatalError("Index out of range") }
         curNode.val = new
     }
@@ -206,7 +206,7 @@ public class DoubleLinkedList<T: Equatable> {
     /// 获取节点值
     /// - Parameter index: 获取位置
     /// - Returns: 当前 index 的节点值
-    public func index(of index: Int) -> T? {
+    func index(of index: Int) -> T? {
         if index == 0 {
             return head?.val
         } else if index == count - 1 {
@@ -219,7 +219,7 @@ public class DoubleLinkedList<T: Equatable> {
     /// 是否包含 element
     /// - Parameter element: 需要查找的 element
     /// - Returns: 如果链表中包含该元素，返回 true，反之则返回 false
-    public func contains(_ element: T) -> Bool {
+    func contains(_ element: T) -> Bool {
         guard head != nil else { return false }
         
         var curNode = head
@@ -234,7 +234,7 @@ public class DoubleLinkedList<T: Equatable> {
     
     /// 获取链表所有元素 (Get all the elements of the linked list)
     /// - Returns: 返回包含链表所有元素的数组
-    public func getAllElements() -> [T] {
+    func getAllElements() -> [T] {
         var nodes = [T]()
         var curNode = head
         while curNode != nil {

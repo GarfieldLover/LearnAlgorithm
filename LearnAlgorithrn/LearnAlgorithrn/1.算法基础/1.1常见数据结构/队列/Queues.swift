@@ -17,22 +17,22 @@ class Queues: UIViewController {
 }
 
 //数组队列
-public struct Queue<T> {
+struct Queue<T> {
   fileprivate var array = [T]()
 
-  public var isEmpty: Bool {
+  var isEmpty: Bool {
     return array.isEmpty
   }
   
-  public var count: Int {
+  var count: Int {
     return array.count
   }
 
-  public mutating func enqueue(_ element: T) {
+  mutating func enqueue(_ element: T) {
     array.append(element)
   }
   
-  public mutating func dequeue() -> T? {
+  mutating func dequeue() -> T? {
     if isEmpty {
       return nil
     } else {
@@ -40,14 +40,14 @@ public struct Queue<T> {
     }
   }
   
-  public var front: T? {
+  var front: T? {
     return array.first
   }
 }
 
 //链表队列
 /// 链表节点类
-public class QueueNode<T> {
+class QueueNode<T> {
     var value: T? // 值
     var next: QueueNode<T>? = nil // 下一个节点
     weak var previous: QueueNode<T>? = nil
@@ -56,12 +56,12 @@ public class QueueNode<T> {
     }
 }
 
-public class QueueByLinkList<T> {
-    public var count: Int = 0
-    public var first: QueueNode<T>?
-    public var last: QueueNode<T>?
+class QueueByLinkList<T> {
+    var count: Int = 0
+    var first: QueueNode<T>?
+    var last: QueueNode<T>?
     
-    public var isEmpty: Bool {
+    var isEmpty: Bool {
       return count == 0
     }
     
@@ -73,8 +73,9 @@ public class QueueByLinkList<T> {
     }
     
     //入队
-    public func enqueue(_ element: T) {
+    func enqueue(_ element: T) {
         if isEmpty {
+            ///为空
             last?.value = element
             count += 1
             return
@@ -86,7 +87,7 @@ public class QueueByLinkList<T> {
     }
     
     //出队
-    public func dequeue(_ element: T) -> T? {
+    func dequeue(_ element: T) -> T? {
         if isEmpty {
             print("***队列为空***")
             return nil
@@ -99,7 +100,7 @@ public class QueueByLinkList<T> {
 }
 
 //循环队列
-public struct CycleQueue<T> {
+struct CycleQueue<T> {
     fileprivate var queue = [T]()
     fileprivate var queue_Capacity: Int = 0
     
@@ -114,12 +115,12 @@ public struct CycleQueue<T> {
     }
     
     /// 清空队列
-    public mutating func clearQueue() {
+    mutating func clearQueue() {
         queue.removeAll()
     }
     
     /// 判断队列是否已经满了
-    public func queueFull() -> Bool {
+    func queueFull() -> Bool {
         return queue_Capacity == count
     }
     
@@ -128,7 +129,7 @@ public struct CycleQueue<T> {
     }
 
     /// 往队列中添加一个元素
-    public mutating func enQueue(_ element : T) -> Bool {
+    mutating func enQueue(_ element : T) -> Bool {
         if queueFull() {
             print("队列已满")
             return false
@@ -139,7 +140,7 @@ public struct CycleQueue<T> {
     }
   
     /// 从队列中取出来一个元素 如果队列为空 那么 取出来的为 nil
-    public mutating func deQueue() -> T? {
+    mutating func deQueue() -> T? {
          if isEmpty {
             return nil
         } else {
@@ -148,7 +149,7 @@ public struct CycleQueue<T> {
         }
     }
      /// 遍历队列
-    public func queueTraverse() {
+    func queueTraverse() {
         if isEmpty {
             print("队列为空")
         } else {
