@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		91212EE927C5DDFA00501343 /* SimpleGraphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91212EE827C5DDFA00501343 /* SimpleGraphs.swift */; };
+		91212EEC27C60EAD00501343 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91212EEB27C60EAD00501343 /* InsertionSort.swift */; };
+		91212EF427C6113B00501343 /* SwiftyForm in Frameworks */ = {isa = PBXBuildFile; productRef = 91212EF327C6113B00501343 /* SwiftyForm */; };
+		91212EF827C6246400501343 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91212EF727C6246400501343 /* SelectionSort.swift */; };
+		91212EFB27C6337000501343 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91212EFA27C6337000501343 /* BubbleSort.swift */; };
+		91212EFF27C6375D00501343 /* ShellSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91212EFE27C6375D00501343 /* ShellSort.swift */; };
+		91212F0227C63DC900501343 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91212F0127C63DC900501343 /* QuickSort.swift */; };
 		918B311027C3434700AD46F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B310F27C3434700AD46F1 /* AppDelegate.swift */; };
 		918B311227C3434700AD46F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B311127C3434700AD46F1 /* SceneDelegate.swift */; };
 		918B311427C3434700AD46F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B311327C3434700AD46F1 /* ViewController.swift */; };
@@ -21,7 +27,6 @@
 		918B315B27C36EED00AD46F1 /* Queues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B315A27C36EED00AD46F1 /* Queues.swift */; };
 		918B316727C39ACF00AD46F1 /* HashTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B316627C39ACF00AD46F1 /* HashTables.swift */; };
 		918B316A27C39C4900AD46F1 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B316927C39C4900AD46F1 /* Tree.swift */; };
-		918B316E27C3A53300AD46F1 /* Sort排序算法.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B316D27C3A53300AD46F1 /* Sort排序算法.swift */; };
 		918B317127C3A85200AD46F1 /* Heaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B317027C3A85200AD46F1 /* Heaps.swift */; };
 		918B317427C3A89000AD46F1 /* Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B317327C3A89000AD46F1 /* Graphs.swift */; };
 		918B320327C4E74D00AD46F1 /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B320227C4E74D00AD46F1 /* Single.swift */; };
@@ -34,6 +39,11 @@
 
 /* Begin PBXFileReference section */
 		91212EE827C5DDFA00501343 /* SimpleGraphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGraphs.swift; sourceTree = "<group>"; };
+		91212EEB27C60EAD00501343 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		91212EF727C6246400501343 /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
+		91212EFA27C6337000501343 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
+		91212EFE27C6375D00501343 /* ShellSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellSort.swift; sourceTree = "<group>"; };
+		91212F0127C63DC900501343 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		918B310C27C3434700AD46F1 /* LearnAlgorithrn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnAlgorithrn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		918B310F27C3434700AD46F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		918B311127C3434700AD46F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +59,6 @@
 		918B315A27C36EED00AD46F1 /* Queues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queues.swift; sourceTree = "<group>"; };
 		918B316627C39ACF00AD46F1 /* HashTables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTables.swift; sourceTree = "<group>"; };
 		918B316927C39C4900AD46F1 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
-		918B316D27C3A53300AD46F1 /* Sort排序算法.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sort排序算法.swift"; sourceTree = "<group>"; };
 		918B317027C3A85200AD46F1 /* Heaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heaps.swift; sourceTree = "<group>"; };
 		918B317327C3A89000AD46F1 /* Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphs.swift; sourceTree = "<group>"; };
 		918B320227C4E74D00AD46F1 /* Single.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Single.swift; sourceTree = "<group>"; };
@@ -65,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91212EF427C6113B00501343 /* SwiftyForm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +141,11 @@
 		918B316C27C3A50E00AD46F1 /* 1.2常见算法 */ = {
 			isa = PBXGroup;
 			children = (
-				918B316D27C3A53300AD46F1 /* Sort排序算法.swift */,
+				91212EFA27C6337000501343 /* BubbleSort.swift */,
+				91212EEB27C60EAD00501343 /* InsertionSort.swift */,
+				91212EFE27C6375D00501343 /* ShellSort.swift */,
+				91212EF727C6246400501343 /* SelectionSort.swift */,
+				91212F0127C63DC900501343 /* QuickSort.swift */,
 			);
 			path = "1.2常见算法";
 			sourceTree = "<group>";
@@ -238,6 +252,9 @@
 			dependencies = (
 			);
 			name = LearnAlgorithrn;
+			packageProductDependencies = (
+				91212EF327C6113B00501343 /* SwiftyForm */,
+			);
 			productName = LearnAlgorithrn;
 			productReference = 918B310C27C3434700AD46F1 /* LearnAlgorithrn.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +282,9 @@
 				Base,
 			);
 			mainGroup = 918B310327C3434600AD46F1;
+			packageReferences = (
+				91212EF227C6113B00501343 /* XCRemoteSwiftPackageReference "SwiftyForm" */,
+			);
 			productRefGroup = 918B310D27C3434700AD46F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -295,9 +315,11 @@
 				918B321227C4EE5900AD46F1 /* BinaryTrees.swift in Sources */,
 				918B311427C3434700AD46F1 /* ViewController.swift in Sources */,
 				918B316A27C39C4900AD46F1 /* Tree.swift in Sources */,
+				91212EEC27C60EAD00501343 /* InsertionSort.swift in Sources */,
+				91212EF827C6246400501343 /* SelectionSort.swift in Sources */,
 				918B320B27C4EB0600AD46F1 /* Circular.swift in Sources */,
 				918B320827C4EA9E00AD46F1 /* Double.swift in Sources */,
-				918B316E27C3A53300AD46F1 /* Sort排序算法.swift in Sources */,
+				91212F0227C63DC900501343 /* QuickSort.swift in Sources */,
 				918B312D27C3440400AD46F1 /* Dictionarys.swift in Sources */,
 				918B312C27C3440400AD46F1 /* Arrays.swift in Sources */,
 				918B317127C3A85200AD46F1 /* Heaps.swift in Sources */,
@@ -311,7 +333,9 @@
 				918B315B27C36EED00AD46F1 /* Queues.swift in Sources */,
 				918B320327C4E74D00AD46F1 /* Single.swift in Sources */,
 				918B317427C3A89000AD46F1 /* Graphs.swift in Sources */,
+				91212EFF27C6375D00501343 /* ShellSort.swift in Sources */,
 				918B321B27C4F5E500AD46F1 /* AVLTrees.swift in Sources */,
+				91212EFB27C6337000501343 /* BubbleSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +535,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91212EF227C6113B00501343 /* XCRemoteSwiftPackageReference "SwiftyForm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jackiehu/SwiftyForm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91212EF327C6113B00501343 /* SwiftyForm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91212EF227C6113B00501343 /* XCRemoteSwiftPackageReference "SwiftyForm" */;
+			productName = SwiftyForm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 918B310427C3434600AD46F1 /* Project object */;
 }
