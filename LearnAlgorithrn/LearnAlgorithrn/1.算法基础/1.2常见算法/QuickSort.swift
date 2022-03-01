@@ -42,7 +42,10 @@ class QuickSort: BaseViewController {
 
 
     }
-    
+    ///根据“基准”变量将它分成三部分
+    ///比基准元素小的所有元素都进入一个名为less的新数组
+    ///等于基准元素都进入equal数组
+    ///所有比基准更大的元素进入第三个数组
     /// 普通的快速排序，不是很高效
     func quicksort<T: Comparable>(_ a: [T]) -> [T] {
         guard a.count > 1  else {
