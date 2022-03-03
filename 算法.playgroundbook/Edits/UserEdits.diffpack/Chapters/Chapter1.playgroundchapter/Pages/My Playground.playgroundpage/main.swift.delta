@@ -1,32 +1,40 @@
-/**
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>/**
  假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
  每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
-
+ 
  示例 1：
-
+ 
  输入：n = 2
  输出：2
  解释：有两种方法可以爬到楼顶。
  1. 1 阶 + 1 阶
  2. 2 阶
  示例 2：
-
+ 
  输入：n = 3
  输出：3
  解释：有三种方法可以爬到楼顶。
  1. 1 阶 + 1 阶 + 1 阶
  2. 1 阶 + 2 阶
  3. 2 阶 + 1 阶
-
+ 
  提示：
- 1 <= n <= 45
+ 1 &lt;= n &lt;= 45
  来源：力扣（LeetCode）
  链接：https://leetcode-cn.com/problems/climbing-stairs
  著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
 ///////单纯的递归
-func climbStairs1(_ n: Int) -> Int {
+func climbStairs1(_ n: Int) -&gt; Int {
     if n == 1{
         return 1
     }
@@ -41,7 +49,7 @@ print("\(climbStairs1(4))")
 ////有记录的递归
 var climbDic = [Int: Int]()
 
-func climbStairs2(_ n: Int) -> Int {
+func climbStairs2(_ n: Int) -&gt; Int {
     if n == 1{
         return 1
     }
@@ -62,7 +70,7 @@ print("\(climbStairs2(6))")
 
 ////循环
 
-func climbStairs3(_ n: Int) -> Int {
+func climbStairs3(_ n: Int) -&gt; Int {
     if n == 1{
         return 1
     }
@@ -81,3 +89,17 @@ func climbStairs3(_ n: Int) -> Int {
     
 }
 print("\(climbStairs3(6))")
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1202}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
